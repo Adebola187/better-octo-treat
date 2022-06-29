@@ -1,0 +1,33 @@
+{{ block title }}
+
+   {{ if subsession.round_number == C.NUM_ROUNDS }}
+
+{{endif}}
+{{endblock}}
+
+{{block content}}
+
+    <p>
+       Round {{participant.selected_round }} was randomly selected for payment.
+    </p>
+    <p>
+        In this Round you chose lottery: <br />
+    {{ question }}
+    </p>
+    <p>You have won {{ answer }} points </p>
+    <p>Your final reward is {{ participationfee }} + {{ answer }} * 0.2 = {{ result }}</p>
+    <p>You have earned  £{{ result }}</p>
+
+    <p>
+
+    </p>
+<p>
+
+</p>
+
+    <p> Thank you for your time! </p>
+    {{ next_button }}
+
+{{ endblock }}
+
+

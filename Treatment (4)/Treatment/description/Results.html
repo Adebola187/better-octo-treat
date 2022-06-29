@@ -1,0 +1,17 @@
+{{ block title}}
+Your reward
+{{ endblock }}
+
+
+{{ block content }}
+    {{ if subsession.round_number == C.NUM_ROUNDS }}
+    <p>
+        Therefore, your reward amount in this experiment is {{player.payoff}}points.
+        Your final payoff is therefore {{ player.reward }}.
+    </p>
+
+{{ endif }}
+
+{{ endblock }}
+
+
